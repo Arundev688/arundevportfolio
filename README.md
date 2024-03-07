@@ -14,3 +14,5 @@ git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/Arundev688/arundevportfolio-.git
 git push -u origin main
+
+make deploye-web

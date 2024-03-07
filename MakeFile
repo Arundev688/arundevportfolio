@@ -1,8 +1,8 @@
 # Makefile for deploying Flutter web app to GitHub Pages
 
 # Update These Variables
-BASE_HREF = '/Jitendra_kohar/'  #/Jitendra_kohar/ represent thename of repository
-GITHUB_REPO = git@github.com:jitendrakohar/Jitendra_kohar.git
+BASE_HREF = '/arundevportfolio/'  
+GITHUB_REPO = https://github.com/Arundev688/arundevportfolio-.git
 BUILD_VERSION := $(shell grep 'version:' pubspec.yaml | awk '{print $$2}')
 
 deploy-web:
@@ -12,7 +12,7 @@ deploy-web:
   @echo "Getting packages..."  #print the log
   flutter pub get #flutter command
 
-  @echo "Building for web..."  #print the log
+  @echo "Building for web..." #print the log
   flutter build web --base-href $(BASE_HREF) --release   #this command using the Base_Href in your index.htm and base_href value is getting from the above variable
 
   @echo "Deploying to git repository"
